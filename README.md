@@ -1,4 +1,4 @@
-# React netflix
+# Next dumy netflix
 ![alt text](/public/Capture.JPG)
 Netflix slider and searchbar, recreated using react with hooks, powered by [Movie Database API](https://www.themoviedb.org/?language=en-US).
 [Demo link](https://zygiss22.github.io/react-netflix/)
