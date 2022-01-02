@@ -19,7 +19,7 @@ Netflix slider and searchbar, recreated using react with hooks, powered by [Movi
 
 This is a small project created to learn a little bit about react hooks, the mayority of the css is taken from netflix's website using web devtools.
 
-There might be things broken in other web browsers, tested only on Crome.
+There might be things broken in other web browsers, tested only on Chrome.
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
