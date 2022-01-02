@@ -263,13 +263,18 @@ main {
   /* min-height: 13.2vw; */
   position: relative;
   margin-bottom: 1.2vw;
+  white-space: nowrap;
+  
 }
 
 .billboard-title h1 {
   /* width: 90%; */
   /* transform-origin: bottom left; */
-  font-size: 32px;
+  font-size: 4.4vw;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px black
 }
+
 
 .billboard-information {
   position: absolute;
@@ -302,12 +307,12 @@ align-items: center;
 }
 
 .synopsis {
-  color:
-#fff;
+color:#fff;
 font-weight: normal;
 line-height: normal;
 width: 100%;
 font-size: 1.4vw;
+opacity: 0.9;
 text-shadow: 2px 2px 4px
 rgba(0, 0, 0, 0.45);
 margin-top: .1vw;
