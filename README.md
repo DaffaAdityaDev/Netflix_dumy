@@ -4,7 +4,7 @@ Netflix slider and searchbar, recreated using react with hooks, powered by [Movi
 [Demo link](https://netflixdumy.netlify.app/)
 
 ## Features
- - Search Movie
+ - Search Movie and Tv Show
  - Slide movies Left,Right or Reset to zero.
  - Expand on hover same as in netflix respecting edges.
  - Small index element with current slide row.
