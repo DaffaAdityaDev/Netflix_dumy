@@ -32,6 +32,8 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
+## and ##
+rename .env.example to .env and insert you api_key
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
