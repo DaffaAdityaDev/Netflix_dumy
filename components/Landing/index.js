@@ -57,9 +57,9 @@ function Landing() {
 
                     {popularMovies && <Slider mainTitle={"Trending now"} data={popularMovies} poster={false} />}
 
-                    {animationMovies && <Slider mainTitle={"Animation movies"} data={animationMovies} poster={true} />}
+                    {animationMovies && <Slider mainTitle={"Anime"} data={animationMovies} poster={true} />}
 
-                    {bestMovies && <Slider mainTitle={"Best 2020 movies"} data={bestMovies} poster={false} />}
+                    {bestMovies && <Slider mainTitle={"best 2021 movies"} data={bestMovies} poster={false} />}
 
                 </div>
             )}

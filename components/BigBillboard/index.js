@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getMovieInformation, IMAGE_BASE } from "../../pages/api/tmdb"
+import { IMAGE_BASE, getTvInformation, getCertificationInformation } from "../../pages/api/tmdb"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 
@@ -7,37 +7,57 @@ import { faPlay, faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 function BigBillboard() {
    
     
-    const [movie, setMovie] = useState(null)
+    const [tv, setTv] = useState(null)
+    const [certificates, setCertification] = useState(null)
 
-    const fetchMovie = async () => {
+    const fetchTv = async () => {
 
-        const response = await getMovieInformation(128)
+        const response = await getTvInformation(94605)
 
         return response
     }
 
+    const fetchCertification = async () => {
+        const certificates = await getCertificationInformation(94605)
+
+        return certificates
+    }
+
+
     useEffect(() => {
 
-
-        fetchMovie().then(response => {
-            setMovie(response.data)
-
+        fetchTv().then(response => {
+            setTv(response.data) 
         })
 
-        return () => setMovie(null)
+        fetchCertification().then(certificates => {
+            setCertification(certificates.data)
+        })
+
+        return () => setTv(null),setCertification(null) 
 
     }, [])
-    
+
+    // useEffect(() => {
+
+    //     fetchCertification().then(certificates => {
+    //         setCertification(certificates.data)
+    //     })
+
+    //     return () => setCertification(null) 
+
+    // }, [])
+    console.log(certificates, "big tv")
     return (
 
         <div className="billboard-content-limits">
             <div className="billboard-base">
                 <div className="billboard-image-wrapper">
-                    <img src={`${IMAGE_BASE}original${movie && movie.backdrop_path}`} alt={"hero"} />
+                    <img src={`${IMAGE_BASE}original${tv && tv.backdrop_path}`} alt={"hero"} />
 
                     <div className="billboard-vignette"></div>
                     <div className="billboard-vignette-bottom"></div>
-                    <div className="billboard-maturity-rating"><span>+13</span></div>
+                    <div className="billboard-maturity-rating"><span>{certificates && certificates.results[0].rating}</span></div>
 
                 </div>
 
@@ -45,12 +65,12 @@ function BigBillboard() {
                     <div className="logo-and-text">
 
                         <div className="billboard-title">
-                            <h1>{`${movie && movie.title}`}</h1>
+                            <h1>{`${tv && tv.name}`}</h1>
                         </div>
 
                         <div className="billboard-description">
                             <div className="episode-title-container"></div>
-                            <div className="synopsis">{movie && movie.overview}</div>
+                            <div className="synopsis">{tv && tv.overview}</div>
                         </div>
 
                         <div className="billboard-link">
