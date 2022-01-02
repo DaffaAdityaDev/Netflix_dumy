@@ -912,6 +912,7 @@ background-position: 50% -50%;
 /* details button */
 
 .show-details {
+  cursor: pointer;
   position: absolute;
   bottom: 0.1vw;
   opacity: 0;
@@ -937,6 +938,7 @@ background-position: 50% -50%;
     animation-duration: 400ms;
     text-align: center;
     cursor: pointer;
+    padding-top: 10vh;
 }
 
 .show-details span svg:hover {
