@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer">
 
             <div className="footer-content">
-            <span className="copyright">&copy; 2020 </span> made using <span className="react-icon"><FontAwesomeIcon icon={faReact} /></span> And Check
+            <span className="copyright">&copy; 2021</span>made using <span className="next-link"><a href="https://nextjs.org/" target="_blank"><p>Next.JS</p></a></span> And Check
             </div>
 
             <div className="social-links">

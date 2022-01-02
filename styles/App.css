@@ -195,6 +195,12 @@ main {
   top:0;
 }
 
+@media only screen and (max-width: 900px) {
+  .billboard-base {
+    height: 60.25vw;
+  }
+}
+
 .billboard-image-wrapper {
   position: relative;
  
@@ -1481,19 +1487,16 @@ background-position: 50% -50%;
 }
 
 .copyright {
-  font-size: 16px;
+  font-size: 1vw;
   margin-right:10px;
   color: #808080;
 }
 
-.react-icon {
-  font-size: 3.5vw;
+.next-link {
+  font-size: 1.2vw;
   margin: 0 5px;
   color: #61dafb;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+
 }
 
 @keyframes spin {
