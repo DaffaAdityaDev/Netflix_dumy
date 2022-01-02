@@ -47,7 +47,7 @@ function BigBillboard() {
     //     return () => setCertification(null) 
 
     // }, [])
-    console.log(certificates, "big tv")
+
     return (
 
         <div className="billboard-content-limits">
