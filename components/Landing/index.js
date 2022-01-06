@@ -44,8 +44,6 @@ function Landing() {
 
     }, [])
 
-
-
     return (
 
         <div>

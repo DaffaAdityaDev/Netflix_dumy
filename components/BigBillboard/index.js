@@ -38,15 +38,7 @@ function BigBillboard() {
 
     }, [])
 
-    // useEffect(() => {
 
-    //     fetchCertification().then(certificates => {
-    //         setCertification(certificates.data)
-    //     })
-
-    //     return () => setCertification(null) 
-
-    // }, [])
 
     return (
 
