@@ -1,17 +1,16 @@
 # Next dumy netflix
 ![alt text](/public/Capture.JPG)
 Netflix slider and searchbar, recreated using react with hooks, powered by [Movie Database API](https://www.themoviedb.org/?language=en-US).
-[Demo link](https://zygiss22.github.io/react-netflix/)
+[Demo link](https://netflixdumy.netlify.app/)
 
 ## Features
-
+ - Search Movie and Tv Show
  - Slide movies Left,Right or Reset to zero.
- - Expand on hover exactly the same as in netflix respecting edges.
+ - Expand on hover same as in netflix respecting edges.
  - Small index element with current slide row.
  - On slide item click, show additional information.
  - show genres, cast or similar movies.
  - Poster style slider
- - Search bar for movies using css grid.
  - Load more button in search screen
 
 
@@ -32,6 +31,8 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
+## and ##
+rename .env.example to .env and insert you api_key
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
