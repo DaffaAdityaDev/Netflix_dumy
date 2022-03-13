@@ -53,11 +53,11 @@ function Landing() {
 
                     <BigBillboard />
 
-                    {popularMovies && <Slider mainTitle={"Trending now"} data={popularMovies} poster={false} />}
+                    {popularMovies && <Slider mainTitle={"Trending now"} data={popularMovies} poster={true} />}
 
                     {animationMovies && <Slider mainTitle={"Anime"} data={animationMovies} poster={true} />}
 
-                    {bestMovies && <Slider mainTitle={"best 2021 movies"} data={bestMovies} poster={false} />}
+                    {bestMovies && <Slider mainTitle={"best 2021 movies"} data={bestMovies} poster={true} />}
 
                 </div>
             )}
