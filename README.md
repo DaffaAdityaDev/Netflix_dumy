@@ -14,7 +14,7 @@ Netflix slider and searchbar, recreated using react with hooks, powered by [Movi
  - Load more button in search screen
 
 
-### General information
+### General information 
 
 This is a small project created to learn a little bit about react hooks, the mayority of the css is taken from netflix's website using web devtools.
 
